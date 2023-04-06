@@ -2388,3 +2388,26 @@ navv ul li ul li a {
 #navbar-toggle.active span:after {
   transform: rotate(-45deg);
 }
+/* Küçük ekranlar için */
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Orta boy ekranlar için */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Büyük ekranlar için */
+@media only screen and (min-width: 901px) {
+  .container-fluid {
+    width: 100%;
+    height: auto;
+  }
+}
