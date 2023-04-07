@@ -2387,3 +2387,16 @@ navv ul li ul li a {
   max-width: 200px;
   height: auto;
 }
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
