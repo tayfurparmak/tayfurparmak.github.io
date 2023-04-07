@@ -228,7 +228,7 @@ body {
 @media (max-width: 991px) {
   html,
   body {
-    overflow-x: hidden;
+    overflow-x: auto;
   }
   .mobile-top-fix {
     margin-top: 30px;
@@ -453,20 +453,7 @@ header
   visibility: hidden;
   z-index: -1;
 }
-.navigation .brand .logologo > img {
-  width: 50%;
-  height: 135px;
 
-  margin-top: 36px;
-  display: inline;
-}
-.navigation .brand .logoone > img {
-  width: 123%;
-  height: auto;
-  position: absolute;
-  margin-top: 23px;
-  margin-left: -15px;
-}
 .header-area .main-nav .nav li.has-sub ul.sub-menu li {
   margin-left: 0px;
   padding-left: 0px;
@@ -2226,7 +2213,7 @@ responsive
 }
 .brand {
   position: absolute;
-  padding-left: 56px;
+  padding-left: 0px;
   float: left;
   line-height: 55px;
   text-transform: uppercase;
@@ -2301,6 +2288,7 @@ navv ul li ul li a {
   background: transparent;
   height: 55px;
   width: 70px;
+  left: 0;
 }
 @media only screen and (max-width: 800px) {
   .nav-mobile {
@@ -2388,26 +2376,14 @@ navv ul li ul li a {
 #navbar-toggle.active span:after {
   transform: rotate(-45deg);
 }
-/* Küçük ekranlar için */
-@media only screen and (max-width: 600px) {
-  .container-fluid {
-    width: 100%;
-    height: auto;
-  }
-}
 
-/* Orta boy ekranlar için */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .container-fluid {
-    width: 100%;
-    height: auto;
-  }
+.navigation .brand .logologo > img {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
 }
-
-/* Büyük ekranlar için */
-@media only screen and (min-width: 901px) {
-  .container-fluid {
-    width: 100%;
-    height: auto;
-  }
+.navigation .brand .logoone > img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
